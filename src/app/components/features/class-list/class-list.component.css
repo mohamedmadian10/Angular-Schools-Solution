@@ -1,0 +1,41 @@
+
+
+.title{
+    text-align: center;
+    background-color: gainsboro;
+    border-top-left-radius: 20px  ;
+    border-bottom-left-radius: 20px ;
+     
+}
+.description{
+    background-color: lightyellow;
+    border-top-right-radius:  20px ;
+    border-bottom-right-radius: 20px  ;
+}
+.classlistwrapper{
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px auto;
+
+}
+.classlistwrapper :hover{
+    transform:scale(1.025);
+    /* background:-webkit-linear-gradient(top,lightgray,white); */
+    box-shadow:gray -5px -5px 10px;
+    cursor: pointer;
+    
+}
+.title:hover{
+    background-color: #660066;
+}
+
+.search{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color:transparent;
+}
+.search:focus{
+    outline: none;
+}

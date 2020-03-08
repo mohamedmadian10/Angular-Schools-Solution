@@ -1,0 +1,23 @@
+.modal-header{
+    background-color: #660066;
+    color: white;
+}
+.close{
+    color: white;
+}
+.schools{
+    margin: 5 px auto;
+}
+.wrapper{
+    border: 1px solid whitesmoke;
+}
+.btn{
+    color: #660066;
+}
+input.ng-valid.ng-touched{
+    border: 2px solid green
+}
+input.ng-invalid.ng-touched{
+    border: 1px solid red
+
+}
