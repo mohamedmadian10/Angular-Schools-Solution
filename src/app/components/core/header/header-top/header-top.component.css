@@ -18,7 +18,7 @@ a{
   .info1,.info2{
     /* position: absolute; */
     
-      width: 600px;
+      max-width: 600px;
       height: 50px;
       margin: 5px;
       
@@ -47,7 +47,7 @@ background-color:rgb(255,255,255,.2);
       
   }
   .info2{
-      width: 650px;
+      max-width: 650px;
   }
   .info{
     margin-top: 100px;
