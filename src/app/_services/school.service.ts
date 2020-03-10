@@ -44,6 +44,11 @@ onSchoolsChanged = new BehaviorSubject<boolean>(null);
 
  addClassesToSchool(schoolIndex, classes){
   this.schools[schoolIndex].classes = this.schools[schoolIndex].classes.concat(classes);
+  // this.schools[schoolIndex].classes = classes;
+ }
+ editClassesToSchool(schoolIndex, classes){
+  // this.schools[schoolIndex].classes = this.schools[schoolIndex].classes.concat(classes);
+  this.schools[schoolIndex].classes = classes;
  }
 
  getClassesOfSchoolById(id){
