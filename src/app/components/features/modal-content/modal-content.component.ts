@@ -121,8 +121,12 @@ export class ModalContentComponent implements OnInit {
     console.log(this.selectedSchoolId);
 
     let selectedSchoolIndex = this.scoolslist.findIndex((school) => school._id === this.selectedSchoolId);
-  
-    this.schoolService.addClassesToSchool(selectedSchoolIndex, this.addOrEditForm.value.Classes);
+    if (this.formType === 'add'){
+      this.schoolService.addClassesToSchool(selectedSchoolIndex, this.addOrEditForm.value.Classes);
+
+    }else{
+      this.schoolService.editClassesToSchool(selectedSchoolIndex, this.addOrEditForm.value.Classes)
+    }
 
     this.schoolService.onSchoolsChanged.next(true);
 
